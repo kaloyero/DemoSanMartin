@@ -1,0 +1,33 @@
+{
+    "lastModifiedDate": "09-07-2015 16:28:00",
+    "performers": [
+        {
+            "performerId": 1,
+            "firstname": "Técnica de malambo: ",
+            "lastname": "lunes 19hs",
+            "country": "Museo José Hernández",
+            "brand": "TED GIBSON SALON, NY",
+            "biography": "<p>Descripcion.</p>",
+            "photo": "",
+            "events": "Lunes 19hs <br/>Inscripciones en xxxx."
+        },
+        {
+            "performerId": 2,
+            "firstname": "Coro de tercera edad",
+            "lastname": "jueves 14 - 16hs",
+            "country": "Casa Carnacini - Espacio Peláez",
+            "biography": "<p>Descripcion.</p>",
+            "photo": "",
+            "events": "jueves 19hs <br/>Inscripciones en xxxx."
+        },
+        {
+            "performerId": 3,
+            "firstname": "Biodanza",
+            "lastname": "miércoles 10 - 13hs",
+            "country": "Museo Juan Manuel de Rosas",
+            "biography": "<p>Descripcion.</p>",
+            "photo": "",
+            "events": "miércoles 19hs <br/>Inscripciones en xxxx."
+        }
+    ]
+}

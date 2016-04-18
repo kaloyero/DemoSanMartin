@@ -1,0 +1,27 @@
+<ion-view view-title="San Martin">
+	<ion-content>
+
+		<img ng-show="showImage" ng-src="data/pois/{{poi.id}}.jpg" class="fullwidth" />
+
+		<div class="padding letterspacing">
+
+			<h2>{{poi.name}}</h2>
+
+			<div class="list">
+				<a ng-show="poi.adress" href="#/app/map/{{poi.id}}" class="item item-icon-left item-wrap">
+					<i class="icon ion-ios-location-outline"></i>
+					<p>{{poi.adress}}</p>
+				</a>
+				<a ng-show="poi.tel" href="tel:{{poi.tel}}" class="item item-icon-left item-wrap">
+					<i class="icon ion-ios-telephone-outline"></i>
+					<p>{{poi.tel}}</p>
+				</a>
+				<a ng-show="poi.site" ng-click="openExternal({{'poi.site'}})" class="ext-link item item-icon-left item-wrap">
+					<i class="icon ion-ios-world-outline"></i>
+					<p>{{poi.site}}</p>
+				</a>
+			</div>
+		</div>
+
+	</ion-content>
+</ion-view>

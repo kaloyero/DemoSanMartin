@@ -1,0 +1,35 @@
+<ion-side-menus enable-menu-with-back-views="false">
+	<ion-side-menu-content>
+		<ion-nav-bar class="bar-stable">
+			<ion-nav-back-button>
+			</ion-nav-back-button>
+			<ion-nav-buttons side="left">
+				<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+				</button>
+			</ion-nav-buttons>
+		</ion-nav-bar>
+		<ion-nav-view name="menuContent"></ion-nav-view>
+	</ion-side-menu-content>
+
+	<ion-side-menu side="left" class="side-menu">
+		<ion-header-bar class="bar-stable">
+			<h1 class="title">Menu</h1>
+		</ion-header-bar>
+		<ion-content>
+			<ion-list class="letterspacing">
+				<ion-item menu-close href="#/app/home">Menu</ion-item>
+				<ion-item menu-close href="#/app/program">Agenda Cultural</ion-item>
+				<ion-item menu-close href="#/app/performers">Talleres</ion-item>
+				<ion-item menu-close href="#/app/speakfrench">Novedades</ion-item>
+				<ion-item menu-close href="#/app/photosvideos">Galeria</ion-item>
+				<ion-item menu-close href="#/app/information">Espacios Culturales</ion-item>
+				<ion-item menu-close href="#/app/sanmartin">San Martin</ion-item>
+				<ion-item menu-close href="#/app/information">Espacios Culturales</ion-item>
+				<ion-item menu-close href="#/app/connect">#Conectate</ion-item>
+				<ion-item ng-if="nbSurveys > 0" menu-close href="#/app/survey">Encuesta <span class="badge badge-assertive">{{nbSurveys}}</span></ion-item>
+
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+
+</ion-side-menus>

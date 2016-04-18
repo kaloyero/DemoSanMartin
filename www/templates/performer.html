@@ -1,0 +1,18 @@
+<ion-view view-title="Info Taller">
+  <ion-content>
+
+	<div class="performer">
+		<img ng-src="data/performers/{{perf.performerId}}.jpg" alt="{{perf.firstname}} {{perf.lastname}}" />
+	
+		<h2 style="color: #27ace3;">{{perf.firstname}} {{perf.lastname}}</h2>
+<!--		<h2><small ng-show="perf.brand"><br />({{perf.brand}})</small></h2> -->
+		<h5>{{perf.country}}</h5>
+		<div class="performer-bio" ng-bind-html="perf.biography"></div>
+		<div class="performing" ng-bind-html="perf.events"></div>
+		
+		<a href="#/app/inscripcion"
+		class="button button-block button-outline button-light">Inscribirme</a>
+	</div>
+
+  </ion-content>
+</ion-view>

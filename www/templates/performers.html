@@ -1,0 +1,28 @@
+<ion-view view-title="Talleres">
+	<ion-content>
+		<div class="page-intro center padding sanmartin-combination-black-text">
+			<div class="icon-circle"><img src="img/ico-cultura2.png" alt="program" /></div>
+			<div class="program-tittle-bg">
+				<p>Sigamos cambiando
+				<br /><Span>SAN MARTIN</Span></p>
+			</div>
+		</div>
+		
+		
+		<a href="#/app/performers" class="home-item" menu-close nav-direction="forward">
+			<div class="icon-circle"><img src="img/iconhome-performers.png" alt="performers" /></div><div class="home-item-text">Encontrar talleres por Zona</div>
+		</a>
+		<a href="#/app/inscripcion" class="home-item" menu-close nav-direction="forward">
+			<div class="icon-circle"><img src="img/iconhome-performers.png" alt="performers" /></div><div class="home-item-text">Inscribirme a un taller</div>
+		</a>
+	    <br><br>
+		<ion-list>
+			<ion-item href="#/app/performer/{{item.performerId}}" class="item-avatar" ng-repeat="item in performers">
+				<img ng-src="data/performers/{{item.performerId}}.jpg" alt="{{item.firstname}} {{item.lastname}}" />
+				<h2 style="color: #27ace3;"><strong>{{item.firstname}}</strong> {{item.lastname}}</h2>
+				<p>{{item.country}}</p>
+				
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

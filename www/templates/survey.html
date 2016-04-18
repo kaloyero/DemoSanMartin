@@ -1,0 +1,61 @@
+<ion-view view-title="Encuesta en vivo">
+	<ion-content>
+	
+		<div class="page-intro center padding sanmartin-combination-black-text">
+			<div class="icon-circle"><img src="img/ico-cultura2.png" alt="program" /></div>
+			<div class="program-tittle-bg">
+				<p>Para Seguir cambiando
+				<Span> quisieramos que contestes esta breve encuesta</Span></p>
+			</div>
+		</div>
+		
+		
+		
+		<div class="list card feedback-card" ng-repeat="item in events">
+			<div class="item item-body center">
+				<h2><strong>{{item.type}}</strong><br />{{item.title}}</h2>
+				<p>{{item.performer.name}}<br />{{item.performer.country}}</p>
+			</div>
+
+			<div class="item tabs">
+				<div class="tab-item">
+					<label class="item item-radio">
+						<input type="radio" name="{{item.eventId}}" value="4" ng-model="item.note"/>
+						<div class="item-content feedback-button" ng-class="{selected: item.note==4}">
+								++
+						</div>
+					</label>
+				</div>
+				<div class="tab-item">
+					<label class="item item-radio">
+						<input type="radio" name="{{item.eventId}}" value="3" ng-model="item.note"/>
+						<div class="item-content feedback-button" ng-class="{selected: item.note==3}">
+								+
+						</div>
+					</label>
+				</div>
+				<div class="tab-item">
+					<label class="item item-radio">
+						<input type="radio" name="{{item.eventId}}" value="2" ng-model="item.note"/>
+						<div class="item-content feedback-button" ng-class="{selected: item.note==2}">
+								-
+						</div>
+					</label>
+				</div>
+				<div class="tab-item">
+					<label class="item item-radio">
+						<input type="radio" name="{{item.eventId}}" value="1" ng-model="item.note"/>
+						<div class="item-content feedback-button" ng-class="{selected: item.note==1}">
+								--
+						</div>
+					</label>
+				</div>
+			</div>
+		</div>
+		
+		<div class="padding" ng-if="events.length > 0">
+			<button type="submit" ng-click="submit()" class="button button-outline button-light button-block">Enviar</button>
+		</div>
+		
+	</ion-content>
+</ion-view>

@@ -1,0 +1,62 @@
+<ion-view view-title="INFORMACION">
+	<ion-content>
+<div class="page-intro center padding sanmartin-combination-black-text">
+			<div class="icon-circle"><img src="img/ico-cultura2.png" alt="program" /></div>
+			<div class="program-tittle-bg">
+				<p>Sigamos cambiando
+				<br /><Span>SAN MARTIN</Span></p>
+			</div>
+		</div>
+		
+		<div class="citylife-head-bg"></div>
+
+		<div class="padding letterspacing">
+
+			<ion-list>
+
+				<ion-item class="item-divider item-icon-right poi-category-bt">
+					Espacios culturales
+					<i class="icon ion-chevron-down"></i>
+				</ion-item>
+				<div class="poi-category-list displaynone">
+					<ion-item ng-repeat="item in pois.hotels" class="item-icon-left" href="#/app/infodetail/{{item.id}}">
+						<i class="icon ion-ios-information-outline"></i> {{item.name}}
+					</ion-item>
+				</div>
+
+				<ion-item class="item-divider item-icon-right poi-category-bt">
+					Museos
+					<i class="icon ion-chevron-down"></i>
+				</ion-item>
+				<div class="poi-category-list displaynone">
+					<ion-item ng-repeat="item in pois.restaurants" class="item-icon-left" href="#/app/infodetail/{{item.id}}">
+						<i class="icon ion-ios-information-outline"></i> {{item.name}}
+					</ion-item>
+				</div>
+
+				<ion-item class="item-divider item-icon-right poi-category-bt">
+					Escuelas
+					<i class="icon ion-chevron-down"></i>
+				</ion-item>
+				<div class="poi-category-list displaynone">
+					<ion-item ng-repeat="item in pois.bars" class="item-icon-left" href="#/app/infodetail/{{item.id}}">
+						<i class="icon ion-ios-information-outline"></i> {{item.name}}
+					</ion-item>
+				</div>
+
+				<ion-item class="item-divider item-icon-right poi-category-bt">
+					Parques y Plazas
+					<i class="icon ion-chevron-down"></i>
+				</ion-item>
+				<div class="poi-category-list displaynone">
+					<ion-item ng-repeat="item in pois.clubs" class="item-icon-left" href="#/app/infodetail/{{item.id}}">
+						<i class="icon ion-ios-information-outline"></i> {{item.name}}
+					</ion-item>
+				</div>
+
+			</ion-list>
+
+		</div>
+
+	</ion-content>
+</ion-view>

@@ -1,0 +1,53 @@
+<ion-view view-title="#Conectate">
+
+	<ion-content class="padding">
+		<div class="connect-icons">
+			<a ng-click="openExternal('http://www.sanmartin.gov.ar/servicios/cultura/')" class="ext-link fiveiconbar">
+				<img src="img/ico-cultura.png" alt="San Martin" />
+			</a>
+			<a ng-click="openExternal('https://www.facebook.com/culturasm')" class="ext-link fiveiconbar">
+				<img src="img/icon-facebook.png" alt="Facebook" />
+			</a>
+			<a ng-click="openExternal('https://twitter.com/sanmartingob')" class="ext-link fiveiconbar">
+				<img src="img/icon-twitter.png" alt="Twitter" />
+			</a>
+			<a ng-click="openExternal('https://www.youtube.com/user/GabrielKatopodis')" class="ext-link fiveiconbar">
+				<img src="img/icon-youtube.png" alt="YouTube" />
+			</a>
+			<!--<a ng-click="openExternal('https://instagram.com/lorealprocongress/')" class="ext-link fiveiconbar">
+				<img src="img/icon-instagram.png" alt="Instagram" />
+			</a>-->
+
+		</div>
+		<p class="center">
+			<a ng-click="openExternal('http://www.sanmartin.gov.ar/')" class="button button-clear button-light sanmartin-combination-text">Cultura <span>| mSM</span></a>
+		</p>
+		<p class="center" ng-if="!feedLoaded">
+			<ion-spinner class="spinner-light"></ion-spinner>
+		</p>
+		
+		<!--
+		<div class="list card item-twitter" ng-repeat="item in feed | unique:'id'" ng-click="openExternal('{{item.link}}')">
+			<div class="item item-avatar">
+				<img ng-src="{{ item.user.picture }}" />
+				<h2>{{ item.user.name }}</h2>
+				<small>@{{ item.user.pseudo }}</small>
+				<small class="time"> {{ item.created | formatTwitterDate}}</small>
+			</div>
+				
+			<div ng-if="item.type == typeTwitter" class="item item-body">
+				<p ng-bind-html="item.text | formatTwitterText"></p>
+			</div>
+			
+			<div ng-if="item.type == typeInstagram" class="item item-image">
+				<img ng-src="{{item.image}}" />
+			</div>
+		</div> -->
+		<img src="img/telefono.png" alt="Telefono" style = "width: 100%;"/>
+		
+		
+		<a ng-click="openExternal('http://www.sanmartin.gov.ar/servicios/cultura/')" class="button button-block button-outline button-light">Ver mas</a>
+		<br />
+
+	</ion-content>
+</ion-view>

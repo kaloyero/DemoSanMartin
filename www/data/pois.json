@@ -1,0 +1,69 @@
+{
+    "lastModifiedDate": "22-07-2015 17:00:00",
+    "restaurants": [
+            {
+            "id": 1,
+            "name": "Museo Juan Manuel de Rosas",
+            "adress": "Diego Pombo Nro. 3324",
+            "tel": "+54 11 4830 0683",
+            "site": "http://www.sanmartin.gov.ar/servicios/cultura/",
+            "lat": -34.566194,
+            "lon": -58.54453
+        },	
+            {
+            "id": 2,
+            "name": "Museo Casa Carnacini",
+            "adress": "Pueyrredón Nro 2720",
+            "tel": "+54 11 4847 5042",
+            "site": "http://www.sanmartin.gov.ar/servicios/cultura/",
+            "lat": -34.566194,
+            "lon": -58.54453
+        }	
+
+    ],
+    "bars": [
+        {
+            "id": 3,
+            "name": "Escuela Municipal de Danzas",
+            "adress": "(91) San Martin Nro. 1693",
+            "tel": "+54 11 4830 0688",
+            "site": "http://www.sanmartin.gov.ar/servicios/cultura/",
+            "lat": -34.580297,
+            "lon": -58.534829
+        }		
+ 
+    ],
+    "clubs": [
+          {
+            "id": 4,
+            "name": "Plaza Pte. Mitre",
+            "adress": "Boulebard Ballester 5900",
+            "tel": "",
+            "site": "http://www.sanmartin.gov.ar/servicios/cultura/",
+            "lat": -34.540801,
+            "lon": -58.562822
+        }	
+
+    ],
+    "practical": [
+
+    ],
+    "cityGuide": [
+   
+    ],
+    "hotels": [
+        {
+            "id": 5,
+            "name": "Complejo Cultural Plaza",
+            "adress": "(89) Intendente Campos Nro. 2089",
+            "tel": "+54 11 4830 0695/0353 ",
+            "site": "http://www.sanmartin.gov.ar/servicios/cultura/",
+            "lat": -34.575989,
+            "lon": -58.53781
+        }
+	
+
+
+    ]
+
+}

@@ -1,0 +1,35 @@
+<ion-view view-title="EDUCATIONAL KIT">
+	<ion-content>
+
+		<div class="page-intro center padding border-bottom">
+			Download here your educational kit
+		</div>
+		
+		<div class="list card" ng-show="showKits" ng-repeat="item in kits">
+			<div class="item item-icon-left item-icon-left-pastille item-wrap">
+				<i class="icon icon-pastille icon-pastille-mykit ion-ios-paper-outline"></i>
+				<h2>{{item.kitId}}. {{item.title}}</h2>
+			</div>
+			<div class="item tabs tabs-icon-left">
+				<a class="tab-item" ng-click="openExternal('{{item.url}}')">
+					<i class="icon ion-arrow-down-a"></i> Download now
+				</a>
+				<a class="tab-item" ng-click="sendEmail({{item.kitId}})">
+					<i class="icon ion-email"></i> Send by e-mail
+				</a>
+			</div>
+		</div>
+		
+		<div class="card" ng-show="!showKits">
+			<div class="item item-wrap center">
+				<i class="icon ion-ios-paper-outline icon-big"></i>
+			</div>
+			<div class="item item-wrap center">
+				<strong>Coming soon.</strong><br/><br/>
+				Please come back on<br/>
+				<p class="big-strong"><strong>September 20th, 2015</strong></p>
+			</div>
+		</div>
+
+	</ion-content>
+</ion-view>

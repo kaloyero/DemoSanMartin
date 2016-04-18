@@ -1,0 +1,35 @@
+<ion-view view-title="WEATHER">
+	<ion-content>
+		<div class="weather-head"><h3>Cannes</h3></div>
+
+		<div class="list card">
+			<div class="item item-icon-left item-weather">
+				<i class="icon weather-icon" ng-class="day1.icon"></i>
+				<div class="weather-temp">
+					{{day1.min}}°<br/>
+					<strong>{{day1.max}}°</strong>
+				</div>
+				<strong>{{day1.day}}</strong><br/>
+				{{day1.weather}}<br/>
+			</div>
+			<div class="item item-icon-left item-weather">
+				<i class="icon weather-icon" ng-class="day2.icon"></i>
+				<div class="weather-temp">
+					{{day2.min}}°<br/>
+					<strong>{{day2.max}}°</strong>
+				</div>
+				<strong>{{day2.day}}</strong><br/>
+				{{day2.weather}}<br/>
+			</div>
+			<div class="item item-icon-left item-weather">
+				<i class="icon weather-icon" ng-class="day3.icon"></i>
+				<div class="weather-temp">
+					{{day3.min}}°<br/>
+					<strong>{{day3.max}}°</strong>
+				</div>
+				<strong>{{day3.day}}</strong><br/>
+				{{day3.weather}}<br/>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

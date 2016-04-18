@@ -1,0 +1,30 @@
+<ion-view view-title="Bienvenido">
+	<ion-nav-bar class="bar-stable"></ion-nav-bar>
+	<ion-content class="padding">
+		<p>Estimado,</p>
+
+		<p>Lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum.</p>
+
+		<p>Bienvenido !</p>
+
+		<p class="sanmartin-combination-text">Cultura <span>San Martin</span></p>
+		
+		<form novalidate>
+			<div class="list">
+				<label class="item item-input item-select">
+					<div class="input-label">Barrio</div>
+					<select ng-model="user.delegation">
+						<option>Chilavert</option>
+						<option>Jose Leon Suarez</option>
+						<option>Malaver</option>
+						<option>Villa Ballester</option>
+						<option>San Andres</option>
+						<option ng-repeat="item in delegations">{{item}}</option>
+					</select>
+				</label>
+			</div>
+			
+			<button type="submit" ng-click="submit()" class="button button-outline button-light button-block">OK</button>
+		</form>
+	</ion-content>
+</ion-view>

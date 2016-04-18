@@ -1,0 +1,10 @@
+<div class="modal modal-container" ng-click="closeModal()">
+	<ion-content has-bouncing="false">
+		<button class="share-button-modal button button-light button-icon icon ion-android-share-alt" ng-click="share(); $event.stopPropagation();"></button>
+		<ion-slide-box show-pager="false" id="carousel-modal" class="carousel-modal">
+			<ion-slide ng-repeat="item in photos" class="carousel-li">
+				<img ng-src="{{item.url}}" class="carousel-img" />
+			</ion-slide>
+		</ion-slide-box>
+	</ion-content>
+</div>

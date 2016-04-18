@@ -1,0 +1,47 @@
+<ion-view view-title="Vivi CULTURA">
+	<ion-nav-bar class="bar-stable"></ion-nav-bar>
+    
+	<ion-content class="home-background">
+
+		<div class="center logo-background"><img src="img/logo.png" class="home-logo home-background" /></div><!-- un "margin: auto" dans la classe de l'image ne permet pas de centrer :^\ -->
+
+        <div class="bigfont center padding-bottom sanmartin-combination-black-text">Cultura <span>| mSM</span></div>
+
+		<a href="#/app/program" class="home-item" menu-close nav-direction="forward">
+			<div class="icon-circle"><img src="img/ico-cultura.png" alt="Agenda Cultural" /></div><div class="home-item-text">Agenda Cultural</div>
+		</a>
+
+		<a href="#/app/performers" class="home-item" menu-close nav-direction="forward">
+			<div class="icon-circle"><img src="img/iconhome-educationalkit.png" alt="Talleres" /></div><div class="home-item-text">Talleres</div>
+		</a>
+		
+		<a href="#/app/speakfrench" class="home-item" menu-close nav-direction="forward">
+			<div class="icon-circle"><img src="img/iconhome-performers.png" alt="Novedades" /></div><div class="home-item-text">Novedades</div>
+		</a>
+
+		<a href="#/app/photosvideos" class="home-item" menu-close nav-direction="forward">
+			<div class="icon-circle"><img src="img/iconhome-picturesvideos.png" alt="Galeria" /></div><div class="home-item-text">Galeria</div>
+		</a>
+		<a href="#/app/information" class="home-item" menu-close nav-direction="forward">
+			<div class="icon-circle"><img src="img/iconhome-performers2.png" alt="Espacios Culturales" /></div><div class="home-item-text">Espacios Culturales</div>
+		</a>
+<!--		<a href="#/app/information" class="home-item" menu-close nav-direction="forward">
+			<div class="icon-circle"><img src="img/iconhome-citylife.png" alt="city life" /></div><div class="home-item-text">Parques y Plazas</div>
+		</a>
+-->
+		<a href="#/app/sanmartin" class="home-item" menu-close nav-direction="forward">
+			<div class="icon-circle"><img src="img/iconhome-citylife.png" alt="San Martin" /></div><div class="home-item-text">San Martin</div>
+		</a>
+		<!-- -->
+		<a href="#/app/connect" class="home-item" menu-close nav-direction="forward">
+			<div class="icon-circle"><img src="img/iconhome-connect.png" alt="Conectate" /></div><div class="home-item-text">Conectate</div>
+		</a>
+
+		<a ng-if="nbSurveys > 0" href="#/app/survey" class="home-item" menu-close nav-direction="forward">
+			<div class="icon-circle"><img src="img/iconhome-survey.png" alt="Encuesta" /></div><div class="home-item-text">Encuesta <span class="badge badge-assertive">{{nbSurveys}}</span></div>
+		</a>
+		
+
+	
+	</ion-content>
+</ion-view>
